@@ -50,7 +50,7 @@
                 key: 'under25',
                 type: 'checkbox',
                 templateOptions: {
-                    label: 'Are you under 25?',
+                    label: 'Are you under 25?'
                 },
                 // Hide this field if we don't have
                 // any valid input in the email field
@@ -74,7 +74,7 @@
                     label: 'Insurance Policy Number',
                     placeholder: 'Enter your insurance policy number'
                 },
-                hideExpression: '!model.under25 || !model.province',
+                hideExpression: '!model.under25 || !model.province'
             },
             {
                 key: 'license',
@@ -118,6 +118,4 @@
         }
 
     }
-
-
 })();

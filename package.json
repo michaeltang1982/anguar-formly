@@ -1,0 +1,11 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular-formly": "^8.4.1",
+    "angular-formly-material": "^0.14.3",
+    "angular-formly-templates-bootstrap": "^6.4.0",
+    "angular-material": "~ 1.0.0",
+    "bootstrap": "^3.3.7"
+  }
+}
