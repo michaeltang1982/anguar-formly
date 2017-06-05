@@ -1,2 +1,2 @@
 'use strict';
-angular.module('formlyApp',['formly', 'formlyBootstrap']);
+angular.module('formlyApp',['formly', 'formlyBootstrap', 'ngStorage']);
