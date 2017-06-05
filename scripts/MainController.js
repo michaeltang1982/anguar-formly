@@ -4,9 +4,22 @@
 
     angular
         .module('formlyApp')
-        .controller('MainController', MainController);
+        .controller('MainController', MainController)
+        .service('hexafy', function() {
+            this.myFunc = function (x) {
+                return x.toString(16);
+            }
+        })
+        .run(function(formlyConfig){
+            formlyConfig.setType({
+                name: 'helloInput',
+                templateUrl: 'greeting.html'
+            })
+        })
 
-    function MainController(province) {
+    function MainController(province, hexafy) {
+
+        var hex = hexafy.myFunc(255);
 
         var vm = this;
         // The model object that we reference
@@ -16,6 +29,18 @@
         // and options set. We make reference to this in
         // the 'fields' attribute on the  element
         vm.rentalFields = [
+            {
+                key:'servicetext',
+                type:'input',
+                templateOptions:{
+                    type:'text',
+                    label:'Hex',
+                    placeholder: hex
+                }
+            },
+            {
+              type:'helloInput'
+            },
             {
                 key: 'first_name',
                 type: 'input',

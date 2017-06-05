@@ -1,4 +1,2 @@
-(function () {
-    'use strict';
-    angular.module('formlyApp',['formly', 'formlyBootstrap'])
-})();
+'use strict';
+angular.module('formlyApp',['formly', 'formlyBootstrap']);
