@@ -7,7 +7,7 @@
         .factory('province', province);
 
     function province() {
-        function getProvinces() {
+        function getFieldInfo() {
             return [
                 {
                     "name": "Alberta",
@@ -65,7 +65,7 @@
         }
 
         return {
-            getProvinces: getProvinces
+            getFieldInfo: getFieldInfo
         }
     }
 
